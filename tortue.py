@@ -4,17 +4,11 @@ t = turtle.Turtle()
 t.speed(0) # max
 
 def equilateral(longueur):
-    for _ in range(3):
-        t.forward(longueur)
-        t.left(120)
-        
+    polygone(longueur, 3)
         
 def carre(longueur):
-    for _ in range(4):
-        t.forward(longueur)
-        t.left(90)
-        
-        
+    polygone(longueur, 4)
+    
 def polygone(longueur, nb_cotes):
     for _ in range(nb_cotes):
         t.forward(longueur)
@@ -22,7 +16,9 @@ def polygone(longueur, nb_cotes):
         
         
         
-polygone (100, 7)       
+equilateral (200)
+        
+        
 # carre(300)        
 # equilateral(300) # appel de la fonction
 
